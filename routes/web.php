@@ -3,6 +3,7 @@
 use App\Http\Livewire\TodoList;
 use App\Http\Livewire\Calculator;
 use App\Http\Livewire\ImageUpload;
+use App\Http\Livewire\RegisterForm;
 use App\Http\Livewire\ProductSearch;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\CascadingDropdowns;
@@ -33,3 +34,5 @@ Route::get('/cascading-dropdowns', CascadingDropdowns::class)->name('cascading-d
 Route::get('/products', ProductSearch::class)->name('products');
 
 Route::get('/image-upload', ImageUpload::class)->name('image-upload');
+
+Route::get('/register', RegisterForm::class)->name('register');
